@@ -1,39 +1,35 @@
-.about_us__block {
-    display: inline-block;
+::after, ::before {
+    box-sizing: border-box;
 }
 
-.about_us__header {
+
+.about__block {
+    display: inline-block;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.about__wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    padding-inline-start: 0;
+    list-style: none;
+  }
+
+.about__heading {
     max-width: 650px;
     max-height: 91px;
     font-family: Roboto;
+    font-size: 45px;
     font-weight: 500;
-    font-size: 45px;    
-    line-height: normal;       /*45px;*/
-    margin-bottom: 32px;
-    margin-left: 140px;
+    line-height: 45px;
 }
 
-.about_us__list{
-    margin-left: 140px;
-}
-
-.about_us__list-header {
-
-    font-family: Roboto;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-}
-
-.about_us__list-item {
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.about_us__list li {
+.about__list li {
     position: relative;
     list-style-type: none;
   }
@@ -44,36 +40,39 @@
     height: 2px;
     background-color: rgba(251, 86, 90, 1);
     position: absolute;
-    left: -40px;
+    left: -25px;
+    top: 11px;
+    transform: translate(-50%);
   }
 
-.about_us__text {
+.about__list-heading {
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.about__list-item {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    
+}
+
+.about__text {
     max-width: 646px;
     max-height: 49px;
     font-family: Roboto;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
-    margin-left: 140px;
 }
 
-.about_us__list-header {
-    margin-left: 140px;
-}
-
-ul .about_us__list {
-    margin-left: 172px;
-}
-
-
-img {
-    margin-bottom: 37px;
-    padding-left: 140px;
-}
-
-.stat {
-    margin-bottom: 37px;
-    padding-left: 140px;
+.stat__list {
+    padding-inline-start: 0%;
 }
 
 .stat__list_item {
@@ -82,7 +81,7 @@ img {
     height: 37px;
 }
 
-.stat__header {
+.stat__heading {
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
@@ -111,6 +110,7 @@ img {
     line-height: 40px;
     width: 20px;
     height: 40px;
+    margin-left: 0;
 }
 
 .stat__text {
@@ -136,9 +136,3 @@ img {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-
-hr {
-    position: absolute;
-    margin-left: 140px;
-    padding-right: 140px;
-}
